@@ -15,3 +15,12 @@ def assign_rooms(attendees)
   end
   return newarray
 end
+
+def printer(attendees)
+  batch_badge_creator(attendees).each do |statement|
+    puts statement
+  end
+  assign_rooms(attendees).each do |statement2|
+    puts statement2
+  end
+end
