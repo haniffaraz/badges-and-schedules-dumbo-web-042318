@@ -11,7 +11,7 @@ end
 def assign_rooms(attendees)
   newarray = []
   attendees.each_with_index do |name, index|
-      counter += 1
-      "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+      newarray << "Hello, #{name}! You'll be assigned to room #{index + 1}!"
   end
+  return newarray
 end
